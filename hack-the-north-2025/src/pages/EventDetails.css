@@ -1,0 +1,63 @@
+/* ======================
+   Event Details Page
+   ====================== */
+   .event-details-container {
+    position: relative;
+    min-height: 100vh;
+    background-color: #1a0f28; /* Dark background */
+    color: white;
+    padding: 2rem;
+  }
+  
+  .event-details-content {
+    max-width: 56rem; /* Equivalent to max-w-4xl */
+    margin: 0 auto;
+    position: relative;
+    z-index: 10; /* Ensure content is above the background */
+  }
+  
+  .event-details-card {
+    background-color: rgba(33, 44, 82, 0.6); /* Semi-transparent indigo */
+    border-radius: 1rem;
+    padding: 2rem;
+    backdrop-filter: blur(8px);
+    border: 2px solid rgba(34, 211, 238, 0.4); /* Cyan border */
+  }
+  
+  .event-details-card h1 {
+    color: #fbbf24; /* amber-400 */
+    font-size: 3rem; /* text-5xl */
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  
+  .event-details-card p {
+    color: rgba(255, 255, 255, 0.8); /* text-white/80 */
+    font-size: 1.125rem; /* text-lg */
+    margin-bottom: 1.5rem;
+  }
+  
+  .event-details-card .icon-text {
+    display: flex;
+    align-items: center;
+    color: #22d3ee; /* cyan-400 */
+    font-size: 1.25rem; /* text-xl */
+    margin-bottom: 1rem;
+  }
+  
+  .event-details-card .icon-text svg {
+    margin-right: 0.5rem;
+  }
+  
+  .event-details-card button {
+    background-color: #f43f5e; /* rose-500 */
+    color: white;
+    font-weight: bold;
+    padding: 0.75rem 2rem;
+    border-radius: 0.75rem;
+    transition: background-color 0.3s;
+  }
+  
+  .event-details-card button:hover {
+    background-color: #e11d48; /* rose-600 */
+  }

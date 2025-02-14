@@ -1,0 +1,48 @@
+.login-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: #f43f5e; /* rose-500 */
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+    z-index: 20;
+  }
+  
+  .login-button:hover {
+    background-color: #e11d48; /* rose-600 */
+  }
+  
+  .login-modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+  }
+  
+  .login-modal-content {
+    background-color: #1e1b4b; /* indigo-900 */
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+  }
+  
+  .login-modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #22d3ee; /* cyan-400 */
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  
+  .login-modal-close:hover {
+    color: #0ea5e9; /* cyan-500 */
+  }

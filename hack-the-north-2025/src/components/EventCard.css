@@ -1,0 +1,102 @@
+/* EventCard.css */
+
+.event-card {
+    background-color: rgba(33, 44, 82, 0.6); /* Semi-transparent indigo */
+    backdrop-filter: blur(8px); /* Add blur effect */
+    border-radius: 1rem;
+    overflow: hidden;
+    transform: transition-all;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid rgba(34, 211, 238, 0.4); /* Add a subtle border */
+    min-height: 400px; /* Set a minimum height to ensure consistency */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure content is spaced evenly */
+  }
+  
+  .event-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .event-card-content {
+    padding: 1.5rem;
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space out content and button */
+  }
+  
+  .event-card-decor-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5rem;
+    height: 5rem;
+    background-color: #f43f5e; /* rose-500 */
+    opacity: 0.1;
+    border-radius: 50%;
+    transform: translate(40%, -40%);
+  }
+  
+  .event-card-decor-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 4rem;
+    height: 4rem;
+    background-color: #22d3ee; /* cyan-500 */
+    opacity: 0.1;
+    border-radius: 50%;
+    transform: translate(-40%, 40%);
+  }
+  
+  .event-card-title {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: bold;
+    color: #fbbf24; /* amber-400 */
+    margin-bottom: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .event-card:hover .event-card-title {
+    color: #fb923c; /* orange-400 */
+  }
+  
+  .event-card-meta {
+    display: flex;
+    align-items: center;
+    color: #22d3ee; /* cyan-400 */
+    margin-bottom: 0.5rem;
+  }
+  
+  .event-card-meta svg {
+    margin-right: 0.5rem;
+  }
+  
+  .event-card-description {
+    color: rgba(255, 255, 255, 0.8); /* text-white/80 */
+    margin-bottom: 1.5rem;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Add ellipsis for overflow text */
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limit to 3 lines */
+    -webkit-box-orient: vertical;
+  }
+  
+  .event-card-button {
+    background-color: #f43f5e; /* rose-500 */
+    color: white;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Make button full width */
+    text-align: center;
+  }
+  
+  .event-card-button:hover {
+    background-color: #e11d48; /* rose-600 */
+  }
